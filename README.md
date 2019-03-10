@@ -1,2 +1,7 @@
 # Report_Generation_System
 报告生成系统
+通过该系统可生成自定义的报告模板，可设定模板规则，及校验规则
+以layui为前端框架
+基于handsontable插件
+生成类excel表格功能
+后端语言为python,以flask为框架
