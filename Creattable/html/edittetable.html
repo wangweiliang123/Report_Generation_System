@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/common.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/layui.css" rel="stylesheet">
+    <link href="../static/css/handsontable.full.min.css" rel="stylesheet">
+    <link href="../static/modle/css/edittable.css" rel="stylesheet">
+    <script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../static/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/layui.all.js"></script>
+    <script type="text/javascript" src="../static/js/handsontable.full.js"></script>
+    <script type="text/javascript" src="../static/js/setting.js"></script>
+    <script type="text/javascript" src="../static/js/common.js"></script>
+    <title>编辑模板</title>
+</head>
+<body>
+<div class="layui-container" style="width: 99%">
+    <div class="layui-row">
+        <div id="newtable">
+            <div style="padding-top: 20px;padding-bottom: 20px">
+                <div class="divtittle" style="text-align: center">
+                    <P><input id="inputtittle" type="text" lay-verify="required" placeholder="某电站测试报告" style="border: none;background-color:#f0fcff;text-align: center;width: 800px"></P>
+                </div>
+                <div style="padding-left: 100px" id="divcheck">
+                    启用 <input type="radio" name="inuse" value="1"  checked="">
+                    禁用 <input type="radio" name="inuse" value="0">
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center" class="divbtn">
+            <button class="layui-btn layui-btn-sm" onclick="BtnBz();">添加步骤</button>
+            <button class="layui-btn layui-btn-sm" onclick="BtnBg();">添加表格</button>
+            <button class="layui-btn layui-btn-sm" onclick="BtnSm();">添加说明</button>
+            <button class="layui-btn layui-btn-sm" onclick="BtnZs();">添加备注</button>
+            <button class="layui-btn layui-btn-sm" onclick="BtnNs();">添加输入框</button>
+            <button class="layui-btn layui-btn-sm" onclick="BtnSave();">保存模板</button>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript" src="../static/modle/js/edittable.js"></script>
+</body>
+</html>

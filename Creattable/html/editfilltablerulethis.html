@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/common.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/layui.css" rel="stylesheet">
+    <link href="../static/css/handsontable.full.min.css" rel="stylesheet">
+    <link href="../static/modle/css/editfilltablerulethis.css" rel="stylesheet">
+    <script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../static/js/jquery-migrate-1.0.0.js"></script>
+    <script type="text/javascript" src="../static/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../static/js/jquery.jqprint-0.3.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/layui.all.js"></script>
+    <script type="text/javascript" src="../static/js/handsontable.full.js"></script>
+    <script type="text/javascript" src="../static/js/setting.js"></script>
+    <script type="text/javascript" src="../static/js/common.js"></script>
+    <title>填写报告</title>
+</head>
+<body>
+<form class="layui-form form_newbm">
+    <div class="layui-form-item " style="margin-left: 390px">
+        <label class="layui-form-label label_class">请选择报告模板：</label>
+        <div class="layui-input-inline">
+            <select name="quiz1" id="bmselect3">
+                <!--数据加载-->
+            </select>
+        </div>
+        <a class="layui-btn layui-btn-sm" style="margin-left: 70px;margin-top: 5px;display: inline-block" onclick="ShowTable();">调取报告</a>
+    </div>
+</form>
+<div class="layui-container" style="width: 99%;display: none" id="showtable">
+    <div class="layui-row">
+        <div class="divtable layui-form" id="tableinfo" >
+            <div id="printarea" style="border: 1px solid cornflowerblue;width: 1080px;padding-top: 12px;margin: -16px auto 0 auto">
+                <div class="divtittle" style="text-align: center">
+                    <P id="inputtittle"></P>
+                </div>
+                <div class="divtop">
+                    <p>作业日期：</p>
+                    <input type="text" class="divinput" id="test" placeholder="请选择作业日期" style="padding-left: 10px">
+                    <p >工作人员：</p>
+                    <select id="bmselect">
+                        <!--数据加载-->
+                    </select>
+                    <p> 工作负责人：</p>
+                    <select id="bmselect1">
+                        <!--数据加载-->
+                    </select>
+                    <p> 报告审核人：</p>
+                    <select id="bmselect2">
+                        <!--数据加载-->
+                    </select>
+                </div>
+                <div id="newtable">
+                    <!--数据加载-->
+                </div>
+            </div>
+            <div style="padding-left: 80px;width:400px;margin: 10px auto;" class="divbtn">
+                <button id="btn1" class="layui-btn layui-btn-sm" lay-submit lay-filter="go" onclick="BtnSave();">保存报告</button>
+                <button class="layui-btn layui-btn-sm" lay-submit lay-filter="go" onclick="BtnSave();">提交报告</button>
+                <button class="layui-btn layui-btn-sm" lay-submit lay-filter="go" onclick="PrintContain();">打印报告</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../static/modle/js/editfilltablerulethis.js"></script>
+</body>
+</html>

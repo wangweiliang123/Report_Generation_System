@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/common.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/layui.css" rel="stylesheet">
+    <link href="../static/css/handsontable.full.min.css" rel="stylesheet">
+    <link href="../static/modle/css/infotablerule.css" rel="stylesheet">
+    <script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../static/js/jquery-migrate-1.0.0.js"></script>
+    <script type="text/javascript" src="../static/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../static/js/jquery.jqprint-0.3.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/layui.all.js"></script>
+    <script type="text/javascript" src="../static/js/handsontable.full.js"></script>
+    <script type="text/javascript" src="../static/js/setting.js"></script>
+    <script type="text/javascript" src="../static/js/common.js"></script>
+    <title>作业报告</title>
+</head>
+<body>
+<div class="layui-container" style="width: 99%">
+    <div class="layui-row">
+        <div class="layui-col-md2" style="text-align: center">
+            <div>
+                <ul id="demo1" style="text-align: left"></ul>
+            </div>
+            <div id="demo3"></div>
+        </div>
+        <div class="layui-col-md10" style="background-color: #f0fcff ;padding-top: 20px;padding-bottom: 30px" id="tableinfo">
+            <div id="printarea" style="border: 1px solid cornflowerblue;width: 1080px;padding-top: 12px;margin-top: -16px">
+                <div class="divtittle" style="text-align: center">
+                    <P id="inputtittle"></P>
+                </div>
+                <div class="divtop">
+                    <p>作业日期：</p>
+                    <input type="text" class="divinput" id="test" placeholder="请选择作业日期" style="padding-left: 10px">
+                    <p >工作人员：</p>
+                    <select id="bmselect">
+                        <!--数据加载-->
+                    </select>
+                    <p> 工作负责人：</p>
+                    <select id="bmselect1">
+                        <!--数据加载-->
+                    </select>
+                    <p> 报告审核人：</p>
+                    <select id="bmselect2">
+                        <!--数据加载-->
+                    </select>
+                </div>
+                <div id="newtable">
+                    <!--数据加载-->
+                </div>
+            </div>
+            <div style="padding-left: 80px" class="divbtn">
+                <button id="btn1" class="layui-btn layui-btn-sm" onclick="BtnSave();">保存报告</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../static/modle/js/infotablerule.js"></script>
+</body>
+</html>

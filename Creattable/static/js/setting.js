@@ -1,0 +1,1 @@
+var urlnei="http://localhost:8090";//主机地址

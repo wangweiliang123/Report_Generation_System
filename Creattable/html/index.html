@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/layui.css" rel="stylesheet">
+    <link href="../static/css/common.css" rel="stylesheet">
+    <link href="../static/modle/css/index.css" rel="stylesheet">
+    <script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../static/js/jquery.cookie.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/layui.all.js"></script>
+    <script src="../static/js/setting.js"></script>
+    <script type="text/javascript" src="../static/modle/js/index.js"></script>
+    <title>作业报告管理系统</title>
+</head>
+<body>
+<!--头部导航-->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">作业报告管理系统</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav" id="thisnavbar">
+                <li class="active"><a href="index.html">首页</a></li>
+                <li class=""><a href="createtable.html" target="iframe_a">创建模板</a></li>
+                <li class=""><a href="tablenew.html" target="iframe_a">编辑模板</a></li>
+                <li class=""><a href="filltablerule.html" target="iframe_a">新建报告</a></li>
+                <li class=""><a href="tablerulenew.html" target="iframe_a">编辑报告</a></li>
+                <li class=""><a href="filltablerulethis.html" target="iframe_a">填写报告</a></li>
+                <li class=""><a href="editfilltablerulethis.html" target="iframe_a">修改报告</a></li>
+                <li class=""><a href="infotableruleend.html" target="iframe_a">报告档案</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="rightnav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="../static/imges/photo.jpg">
+                        <span id="unamespan">请登录</span><b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">个人中心</a></li>
+                        <li><a href="javascript:window.opener=null;window.open('','_self');window.close();">退出</a></li>
+                        <li><a href="login.html">注销</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<iframe src="" name="iframe_a" class="thisiframe">
+    <!--数据加载-->
+</iframe>
+</body>
+</html>

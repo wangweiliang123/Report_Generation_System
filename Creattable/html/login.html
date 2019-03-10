@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/Validformstyle.css" rel="stylesheet" type="text/css">
+    <link href="../static/modle/css/login.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/layui.css" rel="stylesheet">
+    <script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/layui.all.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../static/js/setting.js"></script>
+    <script type="text/javascript" src="../static/modle/js/login.js"></script>
+    <title>登录</title>
+</head>
+<!--登录-->
+<body style="background:url(../static/imges/bg.jpg) no-repeat;">
+<div class="container wrap1" style="height:450px;">
+    <h1 class="mg-b20 text-center" style="font-size: 28px;margin-bottom: 8px">作业报告管理系统</h1>
+    <div class="col-sm-8 col-md-5 center-auto pd-sm-50 pd-xs-20 main_content">
+        <p class="text-center font16">用户登录</p>
+        <form>
+            <div class="form-group mg-t20">
+                <i class="icon-user icon_font"></i>
+                <input  class="login_input" id="username" placeholder="请输入用户名/电话/邮箱" style="color: white;height: 40px" />
+            </div>
+            <div class="form-group mg-t20">
+                <i class="icon-lock icon_font"></i>
+                <input type="password" class="login_input" id="password" placeholder="请输入密码" style="color: white;height: 40px"/>
+            </div>
+            <div class="checkbox mg-b25">
+                <label>
+                    <input type="checkbox" />记住我的登录信息
+                </label>
+            </div>
+            <a  class="login_btn" id="login_button" style="display: inline-block;text-align: center;cursor: pointer">登 录</a>
+        </form>
+    </div><!--row end-->
+</div><!--container end-->
+</body>
+</html>
